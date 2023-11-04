@@ -6,5 +6,5 @@ const grandFatherAge = 83;
 const ageGap = grandFatherAge - mitchAge;
 console.log(ageGap)
 
-// Create a variable called ageGap and assign to it the difference between grandFatherAge and myAge
+// Create a variable called ageGap and assign to it the difference between grandFatherAge and mitchAge
 // Log the value of ageGap to the console 
