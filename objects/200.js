@@ -5,10 +5,11 @@
 
 const person = {
     "name": "Jemima",
-    "location",
-    "id_number" = 9,
+    "location":"Glasgow",
+    "id_number":9,
 };
-
+// it give us a reference error
 console.assert(person.name === "Jemima");
 console.assert(person.location === "Glasgow");
 console.assert(person.id_number === 9);
+// After we fix the bug it work perfectly.

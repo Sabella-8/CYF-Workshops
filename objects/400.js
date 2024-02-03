@@ -17,18 +17,28 @@ function printSaladRecipe(forPerson) {
     };
 
     if (forPerson.eatsMeat) {
-        saladRecipe.push("chicken");
+        saladRecipe.ingredients.push("chicken");
         saladRecipe.steps.push("Mix in the chicken");
     }
 
     console.log(`For ${forPerson.name} to make ${saladRecipe.name}:`);
+    
     console.log("Get:");
+    
+
+
     for (const ingredient of saladRecipe.ingredients) {
+        
         console.log(` * ${ingredient}`);
-    }
+        
+        return ` * ${ingredient}`;
+   
+}
+
     for (const step of saladRecipe.steps) {
         console.log(step);
     }
+
 }
 
 const person1 = {
@@ -44,3 +54,28 @@ const person2 = {
 printSaladRecipe(person1);
 console.log("");
 printSaladRecipe(person2);
+
+// printSaladRecipe(person1);
+//  For Ola to make salad 
+// Get:
+//  *lettuce
+// * corn 
+// *carrots
+// *cucumber
+// *chicken
+// "Shred the lettuce",
+// "Cut the carrots into small pieces",
+// "Slice the cucumber",
+// "Mix all the vegetables together in a bowl"
+// "Mix in the chicken"
+// printSaladRecipe(person2);
+// for Steve to make salad
+// Get:
+//  *lettuce
+// * corn 
+// *carrots
+// *cucumber
+// "Shred the lettuce",
+// "Cut the carrots into small pieces",
+// "Slice the cucumber",
+// "Mix all the vegetables together in a bowl

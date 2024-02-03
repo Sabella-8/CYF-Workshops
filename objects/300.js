@@ -21,4 +21,6 @@ const sayed = {
 }
 
 console.assert(checkLivesNearCYF(mo));
+// it will pass the assertion, since Glasgo in is included in cyfLocation.
 console.assert(!checkLivesNearCYF(sayed));
+// it will fail the assertion
